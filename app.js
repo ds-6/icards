@@ -1,9 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Card = require("./models/card");
+require('dotenv').config();
+
 
 const app = express();
-const uriDB = `mongodb+srv://deepak:12345@cluster0.gsm1a.mongodb.net/icardDB?retryWrites=true&w=majority`;
+const key = process.env.DBKey;
+const uriDB = `mongodb+srv://${key}@cluster0.gsm1a.mongodb.net/icardDB?retryWrites=true&w=majority`;
 
 app.listen("3000", () => {
   console.log("I am Listening...");
