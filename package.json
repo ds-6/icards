@@ -4,7 +4,7 @@
   "description": "Node.js example server starter project",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "dotenv": "8.2.0",
